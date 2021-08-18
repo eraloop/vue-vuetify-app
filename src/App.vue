@@ -1,28 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app class="app">
+     <div fluid class=" grey lighten-4">
+        <Hero />
+        <v-container >
+          <router-view></router-view>
+        </v-container>
+     </div>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Hero from '@/components/Hero'
 export default {
+  components:{
+    Hero
+  },
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  data: () => ({
+    //
+  }),
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.app{
+  font-family: 'Commissioner', 'poppins', 'montserrat';
+}
+.grey-text{
+  color:hsl(0, 0%, 48%),
 }
 </style>
