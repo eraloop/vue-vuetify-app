@@ -31,4 +31,8 @@ export default {
     max-width: 700px;
     margin: auto;
 }
+p, span {
+  font-family: 'montserrat', 'poppins';
+  font-weight: 300;
+}
 </style>

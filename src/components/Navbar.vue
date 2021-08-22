@@ -67,12 +67,12 @@
                         <span>Discover</span>
                     </v-tooltip>
                 </v-toolbar-content>
-                <v-btn outlined rounded large color="pink mx-4 mx-2  hidden-sm-and-down">
+                <v-btn  rounded  large color="hsl(176, 72%, 28%)"  class=" mx-4 mx-2  hidden-sm-and-down">
                     <span class="white--text">Get started</span>
                 </v-btn>
             </v-toolbar>
-            <v-navigation-drawer v-model="drawer" app class="purple pa-5">
-                <v-toolbar app class="p-5" height="100px" flat color="purple">
+            <v-navigation-drawer v-model="drawer" app color="hsl(176, 72%, 28%)" class=" pa-5">
+                <v-toolbar app class="p-5" height="100px" flat color="hsl(176, 72%, 28%)">
                     <h1 dark class="white--text h1">Menu</h1>
                     <v-spacer></v-spacer>
                     <v-btn

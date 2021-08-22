@@ -21,11 +21,15 @@ export default {
   }),
 };
 </script>
-<style scoped>
+<style >
 .app{
-  font-family: 'Commissioner', 'poppins', 'montserrat';
+  font-family: 'poppins', 'montserrat';
 }
 .grey-text{
   color:hsl(0, 0%, 48%),
+}
+p, span {
+  font-family: 'montserrat', 'poppins';
+  font-weight: 300;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-sheet color="white pa-8" elevation="1" max-width="700px" outlined>
+        <v-sheet color="white pa-8" elevation="0" :max-width="width" outlined>
             <div>
                 <h3 class="mb-5 grey-text">About the project</h3>
 
@@ -18,18 +18,35 @@
                 </p>
             </div>
             <div>
-                <FirstCard/>
+                <FirstCard />
+
             </div>
         </v-sheet>
     </v-container>
 </template>
 
 <script>
-import FirstCard from '../LongCard/FirstCard'
+import FirstCard from "../LongCard/FirstCard"
 export default {
-    components:{
+    components: {
         FirstCard
+    },
+    data(){
+        return {
+        }
+    },
+    computed:{
+         width(){
+            switch(this.$vuetify.breakpoint.name){
+                case "xs" : return 300
+                case 'sm' : return 400
+                case 'md' : return 500
+                case 'lg' : return 700
+            }
+            return true
+        }
     }
+
 }
 </script>
 

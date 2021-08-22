@@ -1,0 +1,27 @@
+<div class>
+    <v-card-actions class="mb-3 pa-0">
+        <h4 class="font-weight-bold">
+            {{ card.title }}
+        </h4>
+        <span class="px-6 cyan--text ptext">
+            {{card.ptext }}
+        </span>
+        <v-spacer></v-spacer>
+        <div>
+            <h4 class="font-weight-bold pr-2">
+                {{ card.actionQty }}
+            </h4>
+            <span class="grey--text">{{
+                card.actionSpan
+            }}</span>
+        </div>
+    </v-card-actions>
+</div>
+<div>
+    <p
+        class="subtitle-2 grey--text"
+        color="hsl(0, 0%, 48%)"
+    >
+        {{ card.centerText }}
+    </p>
+</div>
